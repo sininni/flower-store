@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PostDeliveryStrategyTest {
 
     private List<Item> items;
-    private DHLDeliveryStrategy dhl;
+    private PostDeliveryStrategy post;
 
     @BeforeEach
     void setUp() {
@@ -23,11 +23,11 @@ class PostDeliveryStrategyTest {
         items = new ArrayList<>();
         items.add(flower);
         items.add(flower2);
-        dhl = new DHLDeliveryStrategy();
+        post = new PostDeliveryStrategy();
     }
 
     @Test
     void deliver() {
-        assertTrue(dhl.deliver(items));
+        assertTrue(post.deliver(items));
     }
 }
