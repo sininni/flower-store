@@ -1,5 +1,5 @@
 package flowers;
 
 public enum FlowerType {
-   TULIP, ROSE, CHAMOMILE
+   TULIP, ROSE, CHAMOMILE, CACTUS
 }

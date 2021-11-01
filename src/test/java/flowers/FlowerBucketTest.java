@@ -19,12 +19,12 @@ class FlowerBucketTest {
         flowerPack.setAmount(3);
 
         flowerBucket = new FlowerBucket();
-        flowerBucket.addFlowerPack(flowerPack);
-        flowerBucket.addFlowerPack(flowerPack);
+        flowerBucket.addFlowers(flowerPack);
+        flowerBucket.addFlowers(flowerPack);
     }
 
     @Test
     void getPrice() {
-        assertEquals(60, flowerBucket.getPrice());
+        assertEquals(60, flowerBucket.price());
     }
 }

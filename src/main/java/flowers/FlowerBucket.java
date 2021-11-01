@@ -1,20 +1,22 @@
 package flowers;
 
+import item.Item;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class FlowerBucket {
+class FlowerBucket extends Item {
     private List<FlowerPack> flowerPackList = new ArrayList<FlowerPack>();
     private double price;
 
-    public double getPrice() {
+    public double price() {
         for (FlowerPack flowerPack : flowerPackList) {
             price += flowerPack.price();
         }
         return price;
     }
 
-    public void addFlowerPack(FlowerPack flowerPack) {
+    public void addFlowers(FlowerPack flowerPack) {
         flowerPackList.add(flowerPack);
     }
 }
