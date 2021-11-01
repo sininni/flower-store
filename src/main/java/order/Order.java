@@ -1,11 +1,9 @@
 package order;
 
 import delivery.Delivery;
-import item.Item;
+import items.Item;
 import payment.Payment;
 import sun.awt.util.IdentityLinkedList;
-
-import java.util.LinkedList;
 
 public class Order {
     private IdentityLinkedList<Item> items;

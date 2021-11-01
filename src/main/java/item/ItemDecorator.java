@@ -1,12 +1,12 @@
 package item;
 
-import item.Item;
+import items.Item;
 
 abstract class ItemDecorator extends Item {
-    private Item item;
+    public Item item;
 
-    public ItemDecorator (Item itemDecorator) {
-        this.item = itemDecorator;
+    public ItemDecorator (Item item) {
+        this.item = item;
     }
 
     public String getDescribtion() {

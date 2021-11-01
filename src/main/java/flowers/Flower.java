@@ -1,7 +1,7 @@
 package flowers;
 
 
-import item.Item;
+import items.Item;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter @Setter @ToString
 public class Flower extends Item {
     private double sepalLength;
-    private  double price;
+    private double price;
     private FlowerType flowerType;
     private Color color;
 
@@ -19,6 +19,6 @@ public class Flower extends Item {
 
     @Override
     public double price() {
-        return price;
+        return getPrice();
     }
 }

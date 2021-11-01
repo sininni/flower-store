@@ -1,17 +1,13 @@
 package item;
-
-import item.ItemDecorator;
-import item.Item;
+import items.Item;
 
 public class BusketDecorator extends ItemDecorator {
-    private Item item;
-
     public BusketDecorator (Item item) {
         super(item);
     }
 
     public double price() {
-        return 4 + item.price();
+        return 4 + item.getPrice();
     }
 
         @Override

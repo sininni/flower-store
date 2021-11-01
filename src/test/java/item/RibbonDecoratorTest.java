@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BusketDecoratorTest {
+class RibbonDecoratorTest {
     private Item flower;
     @BeforeEach
     void setUp() {
@@ -18,7 +18,13 @@ class BusketDecoratorTest {
 
     @Test
     void price() {
-        BusketDecorator busketDecorator = new BusketDecorator(flower);
-        assertEquals(24.0, busketDecorator.price());
+        RibbonDecorator ribbonDecorator = new RibbonDecorator(flower);
+        assertEquals(33.0, ribbonDecorator.price());
+    }
+
+    @Test
+    void getDescribtion() {
+        RibbonDecorator ribbonDecorator = new RibbonDecorator(flower);
+        assertEquals("Done with RibbonDecorator", ribbonDecorator.getDescribtion());
     }
 }

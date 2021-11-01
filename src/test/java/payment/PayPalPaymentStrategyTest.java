@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CreditCardPaymentStrategyTest {
+class PayPalPaymentStrategyTest {
 
     private Payment payment;
     @BeforeEach
     void setUp() {
-        payment = new CreditCardPaymentStrategy();
+        payment = new PayPalPaymentStrategy();
     }
 
     @Test
